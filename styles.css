@@ -1,0 +1,98 @@
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: var(--card);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 { color: var(--text); margin-bottom: 8px; }
+p { color: #64748b; margin-bottom: 2rem; font-size: 0.95rem; }
+
+.password-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: 'Monaco', monospace;
+    font-size: 0.9rem;
+    background: #f1f5f9;
+}
+
+.copy-btn {
+    background: #e2e8f0;
+    border: none;
+    padding: 0 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.copy-btn:hover { background: #cbd5e1; }
+
+#generate-btn {
+    width: 100%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#generate-btn:hover { background: var(--primary-hover); }
+
+/* Notificação de Copiado */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e293b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.toast.show { opacity: 1; }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Password Generator</h1>
+        <p>Gere senhas fortes de 15 caracteres instantaneamente.</p>
+
+        <div class="password-group">
+            <div class="input-wrapper">
+                <input type="text" id="pw1" readonly placeholder="Senha 1">
+                <button class="copy-btn" onclick="copyToClipboard('pw1')">Copiar</button>
+            </div>
+            
+            <div class="input-wrapper">
+                <input type="text" id="pw2" readonly placeholder="Senha 2">
+                <button class="copy-btn" onclick="copyToClipboard('pw2')">Copiar</button>
+            </div>
+        </div>
+
+        <button id="generate-btn">Gerar Novas Senhas</button>
+        <div id="toast" class="toast">Copiado!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
