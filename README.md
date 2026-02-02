@@ -1,7 +1,3 @@
-Para deixar o seu README com um visual de nível sênior e destacar seu foco em BI e Data Science, vamos usar uma estrutura mais limpa, com badges organizadas e blocos de destaque. O segredo da "beleza" no GitHub é o espaçamento e o uso de ícones sutis.
-
-Aqui está a versão refinada e profissional:
-
 🛡️ Password Generator Pro
 Gerador de senhas de alta entropia com foco em UX e análise estatística.
 
